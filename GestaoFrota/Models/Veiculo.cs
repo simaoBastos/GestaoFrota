@@ -1,0 +1,46 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Text.Json.Serialization;
+using System.ComponentModel.Design;
+
+namespace GestaoFrota.Models
+{
+    [JsonDerivedType(typeof(Carro), typeDiscriminator: "carro")]
+    [JsonDerivedType(typeof(Caminhao), typeDiscriminator: "caminhao")]
+    public abstract class Veiculo
+    {
+        public Guid Id { get; set; }
+        public string Placa { get; set; }
+        public string Modelo { get; set; }
+
+        private int _ano;
+        private int Ano
+        {
+            get => _ano;
+            set
+            {
+                if (value < 1900 || value > DateTime.Now.Year + 1)
+                {
+                    throw new ArgumentOutOfRangeException("Ano do veículo inválido.");
+                    _ano = value;
+                }
+            }
+        }
+        public decimal ValorDiariaBase { get; set; }
+        protected Veiculo(string placa, string modelo, int ano, decimal valorDiariaBase)
+        {
+            Id = Guid.NewGuid();
+            Placa = placa;
+            Modelo = modelo;
+            Ano = ano;
+            ValorDiariaBase = valorDiariaBase;
+        }
+
+        public abstract decimal CalcularCalculoAluguel(int dias);
+
+        public virtual string ObterDescricao() => $"{Modelo} ({Placa}) - Ano: {Ano}";
+    }
+}
