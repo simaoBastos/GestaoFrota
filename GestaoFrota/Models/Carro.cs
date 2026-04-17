@@ -10,7 +10,7 @@ namespace GestaoFrota.Models
     public class Carro(string placa, string modelo, int ano, decimal valorDiariaBase, int quantidadePortas) : Veiculo(placa, modelo, ano, valorDiariaBase)
     {
         public int QuantidadePortas { get; set; } = quantidadePortas;
-        public override decimal CalcularCalculoAluguel(int dias)
+        public override decimal CalcularCustoAluguel(int dias)
         {
             decimal custoBase = ValorDiariaBase * dias;
             return custoBase + (custoBase * 0.10m);

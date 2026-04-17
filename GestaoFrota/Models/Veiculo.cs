@@ -17,14 +17,14 @@ namespace GestaoFrota.Models
         public string Modelo { get; set; }
 
         private int _ano;
-        private int Ano
+        public int Ano
         {
             get => _ano;
             set
             {
                 if (value < 1900 || value > DateTime.Now.Year + 1)
                 {
-                    throw new ArgumentOutOfRangeException("Ano do veículo inválido.");
+                    throw new ArgumentException("Ano do veículo inválido.");
                     _ano = value;
                 }
             }
@@ -39,7 +39,7 @@ namespace GestaoFrota.Models
             ValorDiariaBase = valorDiariaBase;
         }
 
-        public abstract decimal CalcularCalculoAluguel(int dias);
+        public abstract decimal CalcularCustoAluguel(int dias);
 
         public virtual string ObterDescricao() => $"{Modelo} ({Placa}) - Ano: {Ano}";
     }
