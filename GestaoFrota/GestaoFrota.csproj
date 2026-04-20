@@ -6,6 +6,14 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <PackageIcon>icone_Frotas.ico</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="icone_Frotas.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
