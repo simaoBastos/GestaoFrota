@@ -50,104 +50,110 @@
             // cmbTipoVeiculo
             // 
             cmbTipoVeiculo.FormattingEnabled = true;
-            cmbTipoVeiculo.Location = new Point(228, 47);
+            cmbTipoVeiculo.Location = new Point(191, 47);
             cmbTipoVeiculo.Margin = new Padding(4);
             cmbTipoVeiculo.Name = "cmbTipoVeiculo";
-            cmbTipoVeiculo.Size = new Size(249, 37);
+            cmbTipoVeiculo.Size = new Size(249, 27);
             cmbTipoVeiculo.TabIndex = 0;
             cmbTipoVeiculo.SelectedIndexChanged += cmbTipoVeiculo_SelectedIndexChanged;
             // 
             // txtPlaca
             // 
-            txtPlaca.Location = new Point(227, 92);
+            txtPlaca.Location = new Point(626, 47);
             txtPlaca.Margin = new Padding(4);
             txtPlaca.Name = "txtPlaca";
-            txtPlaca.Size = new Size(250, 37);
+            txtPlaca.Size = new Size(250, 27);
             txtPlaca.TabIndex = 1;
             // 
             // txtModelo
             // 
-            txtModelo.Location = new Point(228, 138);
+            txtModelo.Location = new Point(191, 82);
             txtModelo.Margin = new Padding(4);
             txtModelo.Name = "txtModelo";
-            txtModelo.Size = new Size(249, 37);
+            txtModelo.Size = new Size(249, 27);
             txtModelo.TabIndex = 2;
             // 
             // txtAno
             // 
-            txtAno.Location = new Point(228, 183);
+            txtAno.Location = new Point(625, 82);
             txtAno.Margin = new Padding(4);
             txtAno.Name = "txtAno";
-            txtAno.Size = new Size(249, 37);
+            txtAno.Size = new Size(249, 27);
             txtAno.TabIndex = 3;
             // 
             // txtDiaria
             // 
-            txtDiaria.Location = new Point(228, 228);
+            txtDiaria.Location = new Point(191, 117);
             txtDiaria.Margin = new Padding(4);
             txtDiaria.Name = "txtDiaria";
-            txtDiaria.Size = new Size(249, 37);
+            txtDiaria.Size = new Size(249, 27);
             txtDiaria.TabIndex = 4;
             // 
             // txtEspecifico
             // 
-            txtEspecifico.Location = new Point(228, 273);
+            txtEspecifico.Location = new Point(626, 117);
             txtEspecifico.Margin = new Padding(4);
             txtEspecifico.Name = "txtEspecifico";
-            txtEspecifico.Size = new Size(249, 37);
+            txtEspecifico.Size = new Size(249, 27);
             txtEspecifico.TabIndex = 5;
             // 
             // lblPlaca
             // 
             lblPlaca.AutoSize = true;
-            lblPlaca.Location = new Point(50, 95);
+            lblPlaca.Font = new Font("Calibri", 10F);
+            lblPlaca.Location = new Point(448, 53);
             lblPlaca.Margin = new Padding(4, 0, 4, 0);
             lblPlaca.Name = "lblPlaca";
-            lblPlaca.Size = new Size(71, 29);
+            lblPlaca.Size = new Size(42, 17);
             lblPlaca.TabIndex = 6;
             lblPlaca.Text = "Placa:";
             // 
             // lblModelo
             // 
             lblModelo.AutoSize = true;
-            lblModelo.Location = new Point(50, 141);
+            lblModelo.Font = new Font("Calibri", 10F);
+            lblModelo.Location = new Point(13, 88);
             lblModelo.Name = "lblModelo";
-            lblModelo.Size = new Size(97, 29);
+            lblModelo.Size = new Size(55, 17);
             lblModelo.TabIndex = 7;
             lblModelo.Text = "Modelo:";
             // 
             // lblAno
             // 
             lblAno.AutoSize = true;
-            lblAno.Location = new Point(50, 186);
+            lblAno.Font = new Font("Calibri", 10F);
+            lblAno.Location = new Point(447, 88);
             lblAno.Name = "lblAno";
-            lblAno.Size = new Size(59, 29);
+            lblAno.Size = new Size(34, 17);
             lblAno.TabIndex = 8;
             lblAno.Text = "Ano:";
             // 
             // lblValorDiaria
             // 
             lblValorDiaria.AutoSize = true;
-            lblValorDiaria.Location = new Point(50, 231);
+            lblValorDiaria.Font = new Font("Calibri", 10F);
+            lblValorDiaria.Location = new Point(13, 123);
             lblValorDiaria.Name = "lblValorDiaria";
-            lblValorDiaria.Size = new Size(165, 29);
+            lblValorDiaria.Size = new Size(95, 17);
             lblValorDiaria.TabIndex = 9;
             lblValorDiaria.Text = "Valor da Diaria:";
             // 
             // lblEspecifico
             // 
-            lblEspecifico.Location = new Point(50, 276);
+            lblEspecifico.Font = new Font("Calibri", 10F);
+            lblEspecifico.Location = new Point(448, 123);
             lblEspecifico.Name = "lblEspecifico";
-            lblEspecifico.Size = new Size(170, 83);
+            lblEspecifico.Size = new Size(170, 21);
             lblEspecifico.TabIndex = 10;
             lblEspecifico.Text = "Especifico:";
             // 
             // btnAdicionar
             // 
             btnAdicionar.BackColor = Color.MintCream;
-            btnAdicionar.Location = new Point(228, 325);
+            btnAdicionar.Font = new Font("Calibri", 10F);
+            btnAdicionar.Location = new Point(316, 151);
             btnAdicionar.Name = "btnAdicionar";
-            btnAdicionar.Size = new Size(125, 75);
+            btnAdicionar.Size = new Size(125, 30);
             btnAdicionar.TabIndex = 11;
             btnAdicionar.Text = "Adicionar Veículo";
             btnAdicionar.UseVisualStyleBackColor = false;
@@ -156,9 +162,10 @@
             // btnRemover
             // 
             btnRemover.BackColor = Color.Snow;
-            btnRemover.Location = new Point(353, 325);
+            btnRemover.Font = new Font("Calibri", 10F);
+            btnRemover.Location = new Point(448, 151);
             btnRemover.Name = "btnRemover";
-            btnRemover.Size = new Size(125, 75);
+            btnRemover.Size = new Size(125, 30);
             btnRemover.TabIndex = 12;
             btnRemover.Text = "Remover Veículo";
             btnRemover.UseVisualStyleBackColor = false;
@@ -168,29 +175,30 @@
             // 
             dgvFrota.AllowUserToAddRows = false;
             dgvFrota.AllowUserToDeleteRows = false;
-            dgvFrota.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvFrota.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvFrota.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvFrota.Location = new Point(484, 47);
+            dgvFrota.Location = new Point(14, 187);
             dgvFrota.Name = "dgvFrota";
             dgvFrota.ReadOnly = true;
             dgvFrota.RowHeadersWidth = 62;
-            dgvFrota.Size = new Size(705, 353);
+            dgvFrota.Size = new Size(863, 308);
             dgvFrota.TabIndex = 13;
             // 
             // lblTipoVeiculo
             // 
             lblTipoVeiculo.AutoSize = true;
-            lblTipoVeiculo.Location = new Point(50, 50);
+            lblTipoVeiculo.Font = new Font("Calibri", 10F);
+            lblTipoVeiculo.Location = new Point(12, 53);
             lblTipoVeiculo.Name = "lblTipoVeiculo";
-            lblTipoVeiculo.Size = new Size(171, 29);
+            lblTipoVeiculo.Size = new Size(96, 17);
             lblTipoVeiculo.TabIndex = 14;
             lblTipoVeiculo.Text = "Tipo de Veículo:";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(12F, 29F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1216, 544);
+            ClientSize = new Size(889, 507);
             Controls.Add(lblTipoVeiculo);
             Controls.Add(dgvFrota);
             Controls.Add(btnRemover);

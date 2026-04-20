@@ -25,8 +25,9 @@ namespace GestaoFrota.Models
                 if (value < 1900 || value > DateTime.Now.Year + 1)
                 {
                     throw new ArgumentException("Ano do veículo inválido.");
-                    _ano = value;
+                    
                 }
+                _ano = value;
             }
         }
         public decimal ValorDiariaBase { get; set; }

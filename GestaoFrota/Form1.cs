@@ -23,10 +23,6 @@ namespace GestaoFrota
             //Expressoes de coleção para inicializar arrays rapidamente
             cmbTipoVeiculo.Items.AddRange(new string[] { "Carro", "Caminhão" });
             cmbTipoVeiculo.SelectedIndex = 0;
-            cmbTipoVeiculo.SelectedIndexChanged += cmbTipoVeiculo_SelectedIndexChanged;
-
-            btnAdicionar.Click += btnAdicionar_Click;
-            btnRemover.Click += btnRemover_Click;
 
             dgvFrota.DataSource = _bindingSouce;
             dgvFrota.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
