@@ -2,11 +2,11 @@ using GestaoFrota.Models;
 
 namespace GestaoFrota
 {
-    public partial class Form1 : Form
+    public partial class FrmGestao : Form
     {
         private FrotaRepository _repositorio;
         private BindingSource _bindingSouce;
-        public Form1()
+        public FrmGestao()
         {
             InitializeComponent();
             _repositorio = new FrotaRepository();
@@ -14,6 +14,24 @@ namespace GestaoFrota
 
             ConfigurarFormulario();
             CarregarDados();
+        }
+
+        private void FrmGestao_Load(object sender, EventArgs e)
+        {
+            AjustarColunas();
+        }
+
+        public void AjustarColunas()
+        {
+            dgvFrota.Columns["Id"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+
+            foreach (DataGridViewColumn col in dgvFrota.Columns)
+            {
+                if (col.Name != "Id")
+                {
+                    col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                }
+            }
         }
 
         private void ConfigurarFormulario()
@@ -96,6 +114,8 @@ namespace GestaoFrota
             txtEspecifico.Clear();
             txtPlaca.Focus();
         }
+
+       
     }
 
 }

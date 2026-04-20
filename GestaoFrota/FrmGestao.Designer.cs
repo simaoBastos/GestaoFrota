@@ -1,6 +1,6 @@
 ﻿namespace GestaoFrota
 {
-    partial class Form1
+    partial class FrmGestao
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestao));
             cmbTipoVeiculo = new ComboBox();
             txtPlaca = new TextBox();
             txtModelo = new TextBox();
@@ -44,6 +44,7 @@
             btnRemover = new Button();
             dgvFrota = new DataGridView();
             lblTipoVeiculo = new Label();
+            lblTitulo = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvFrota).BeginInit();
             SuspendLayout();
             // 
@@ -53,13 +54,13 @@
             cmbTipoVeiculo.Location = new Point(191, 47);
             cmbTipoVeiculo.Margin = new Padding(4);
             cmbTipoVeiculo.Name = "cmbTipoVeiculo";
-            cmbTipoVeiculo.Size = new Size(249, 27);
+            cmbTipoVeiculo.Size = new Size(257, 27);
             cmbTipoVeiculo.TabIndex = 0;
             cmbTipoVeiculo.SelectedIndexChanged += cmbTipoVeiculo_SelectedIndexChanged;
             // 
             // txtPlaca
             // 
-            txtPlaca.Location = new Point(626, 47);
+            txtPlaca.Location = new Point(623, 50);
             txtPlaca.Margin = new Padding(4);
             txtPlaca.Name = "txtPlaca";
             txtPlaca.Size = new Size(250, 27);
@@ -67,15 +68,15 @@
             // 
             // txtModelo
             // 
-            txtModelo.Location = new Point(191, 82);
+            txtModelo.Location = new Point(191, 87);
             txtModelo.Margin = new Padding(4);
             txtModelo.Name = "txtModelo";
-            txtModelo.Size = new Size(249, 27);
+            txtModelo.Size = new Size(257, 27);
             txtModelo.TabIndex = 2;
             // 
             // txtAno
             // 
-            txtAno.Location = new Point(625, 82);
+            txtAno.Location = new Point(624, 90);
             txtAno.Margin = new Padding(4);
             txtAno.Name = "txtAno";
             txtAno.Size = new Size(249, 27);
@@ -83,15 +84,15 @@
             // 
             // txtDiaria
             // 
-            txtDiaria.Location = new Point(191, 117);
+            txtDiaria.Location = new Point(191, 130);
             txtDiaria.Margin = new Padding(4);
             txtDiaria.Name = "txtDiaria";
-            txtDiaria.Size = new Size(249, 27);
+            txtDiaria.Size = new Size(257, 27);
             txtDiaria.TabIndex = 4;
             // 
             // txtEspecifico
             // 
-            txtEspecifico.Location = new Point(626, 117);
+            txtEspecifico.Location = new Point(624, 130);
             txtEspecifico.Margin = new Padding(4);
             txtEspecifico.Name = "txtEspecifico";
             txtEspecifico.Size = new Size(249, 27);
@@ -100,60 +101,67 @@
             // lblPlaca
             // 
             lblPlaca.AutoSize = true;
-            lblPlaca.Font = new Font("Calibri", 10F);
-            lblPlaca.Location = new Point(448, 53);
+            lblPlaca.Font = new Font("Calibri", 12F, FontStyle.Bold);
+            lblPlaca.ForeColor = Color.White;
+            lblPlaca.Location = new Point(455, 50);
             lblPlaca.Margin = new Padding(4, 0, 4, 0);
             lblPlaca.Name = "lblPlaca";
-            lblPlaca.Size = new Size(42, 17);
+            lblPlaca.Size = new Size(49, 19);
             lblPlaca.TabIndex = 6;
             lblPlaca.Text = "Placa:";
             // 
             // lblModelo
             // 
             lblModelo.AutoSize = true;
-            lblModelo.Font = new Font("Calibri", 10F);
-            lblModelo.Location = new Point(13, 88);
+            lblModelo.Font = new Font("Calibri", 12F, FontStyle.Bold);
+            lblModelo.ForeColor = Color.White;
+            lblModelo.Location = new Point(15, 90);
             lblModelo.Name = "lblModelo";
-            lblModelo.Size = new Size(55, 17);
+            lblModelo.Size = new Size(66, 19);
             lblModelo.TabIndex = 7;
             lblModelo.Text = "Modelo:";
             // 
             // lblAno
             // 
             lblAno.AutoSize = true;
-            lblAno.Font = new Font("Calibri", 10F);
-            lblAno.Location = new Point(447, 88);
+            lblAno.Font = new Font("Calibri", 12F, FontStyle.Bold);
+            lblAno.ForeColor = Color.White;
+            lblAno.Location = new Point(455, 90);
             lblAno.Name = "lblAno";
-            lblAno.Size = new Size(34, 17);
+            lblAno.Size = new Size(41, 19);
             lblAno.TabIndex = 8;
             lblAno.Text = "Ano:";
             // 
             // lblValorDiaria
             // 
             lblValorDiaria.AutoSize = true;
-            lblValorDiaria.Font = new Font("Calibri", 10F);
-            lblValorDiaria.Location = new Point(13, 123);
+            lblValorDiaria.Font = new Font("Calibri", 12F, FontStyle.Bold);
+            lblValorDiaria.ForeColor = Color.White;
+            lblValorDiaria.Location = new Point(13, 130);
             lblValorDiaria.Name = "lblValorDiaria";
-            lblValorDiaria.Size = new Size(95, 17);
+            lblValorDiaria.Size = new Size(113, 19);
             lblValorDiaria.TabIndex = 9;
             lblValorDiaria.Text = "Valor da Diaria:";
             // 
             // lblEspecifico
             // 
-            lblEspecifico.Font = new Font("Calibri", 10F);
-            lblEspecifico.Location = new Point(448, 123);
+            lblEspecifico.Font = new Font("Calibri", 12F, FontStyle.Bold);
+            lblEspecifico.ForeColor = Color.White;
+            lblEspecifico.Location = new Point(455, 130);
             lblEspecifico.Name = "lblEspecifico";
-            lblEspecifico.Size = new Size(170, 21);
+            lblEspecifico.Size = new Size(162, 21);
             lblEspecifico.TabIndex = 10;
             lblEspecifico.Text = "Especifico:";
             // 
             // btnAdicionar
             // 
-            btnAdicionar.BackColor = Color.MintCream;
-            btnAdicionar.Font = new Font("Calibri", 10F);
-            btnAdicionar.Location = new Point(316, 151);
+            btnAdicionar.BackColor = Color.CadetBlue;
+            btnAdicionar.FlatStyle = FlatStyle.Flat;
+            btnAdicionar.Font = new Font("Calibri", 12F, FontStyle.Bold);
+            btnAdicionar.ForeColor = Color.White;
+            btnAdicionar.Location = new Point(304, 160);
             btnAdicionar.Name = "btnAdicionar";
-            btnAdicionar.Size = new Size(125, 30);
+            btnAdicionar.Size = new Size(140, 30);
             btnAdicionar.TabIndex = 11;
             btnAdicionar.Text = "Adicionar Veículo";
             btnAdicionar.UseVisualStyleBackColor = false;
@@ -161,12 +169,14 @@
             // 
             // btnRemover
             // 
-            btnRemover.BackColor = Color.Snow;
-            btnRemover.Font = new Font("Calibri", 10F);
-            btnRemover.Location = new Point(448, 151);
+            btnRemover.BackColor = Color.LightCoral;
+            btnRemover.FlatStyle = FlatStyle.Flat;
+            btnRemover.Font = new Font("Calibri", 12F, FontStyle.Bold);
+            btnRemover.ForeColor = Color.White;
+            btnRemover.Location = new Point(460, 160);
             btnRemover.Name = "btnRemover";
-            btnRemover.Size = new Size(125, 30);
-            btnRemover.TabIndex = 12;
+            btnRemover.Size = new Size(140, 30);
+            btnRemover.TabIndex = 11;
             btnRemover.Text = "Remover Veículo";
             btnRemover.UseVisualStyleBackColor = false;
             btnRemover.Click += btnRemover_Click;
@@ -177,28 +187,42 @@
             dgvFrota.AllowUserToDeleteRows = false;
             dgvFrota.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvFrota.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvFrota.Location = new Point(14, 187);
+            dgvFrota.Location = new Point(10, 195);
             dgvFrota.Name = "dgvFrota";
             dgvFrota.ReadOnly = true;
             dgvFrota.RowHeadersWidth = 62;
-            dgvFrota.Size = new Size(863, 308);
+            dgvFrota.Size = new Size(867, 300);
             dgvFrota.TabIndex = 13;
             // 
             // lblTipoVeiculo
             // 
             lblTipoVeiculo.AutoSize = true;
-            lblTipoVeiculo.Font = new Font("Calibri", 10F);
-            lblTipoVeiculo.Location = new Point(12, 53);
+            lblTipoVeiculo.Font = new Font("Calibri", 12F, FontStyle.Bold);
+            lblTipoVeiculo.ForeColor = Color.White;
+            lblTipoVeiculo.Location = new Point(15, 50);
             lblTipoVeiculo.Name = "lblTipoVeiculo";
-            lblTipoVeiculo.Size = new Size(96, 17);
+            lblTipoVeiculo.Size = new Size(117, 19);
             lblTipoVeiculo.TabIndex = 14;
             lblTipoVeiculo.Text = "Tipo de Veículo:";
             // 
-            // Form1
+            // lblTitulo
+            // 
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Calibri", 20F, FontStyle.Bold);
+            lblTitulo.ForeColor = Color.White;
+            lblTitulo.Location = new Point(356, 9);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(193, 33);
+            lblTitulo.TabIndex = 15;
+            lblTitulo.Text = "Gestão de Frota";
+            // 
+            // FrmGestao
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDarkDark;
             ClientSize = new Size(889, 507);
+            Controls.Add(lblTitulo);
             Controls.Add(lblTipoVeiculo);
             Controls.Add(dgvFrota);
             Controls.Add(btnRemover);
@@ -215,10 +239,13 @@
             Controls.Add(txtPlaca);
             Controls.Add(cmbTipoVeiculo);
             Font = new Font("Calibri", 12F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
-            Name = "Form1";
-            Text = "Form1";
+            MaximizeBox = false;
+            Name = "FrmGestao";
+            Text = "Gestão de Frota";
+            Load += FrmGestao_Load;
             ((System.ComponentModel.ISupportInitialize)dgvFrota).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -241,5 +268,6 @@
         private Button btnRemover;
         private DataGridView dgvFrota;
         private Label lblTipoVeiculo;
+        private Label lblTitulo;
     }
 }
