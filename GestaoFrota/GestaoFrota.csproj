@@ -7,7 +7,12 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <PackageIcon>icone_Frotas.ico</PackageIcon>
+    <ApplicationIcon>icone_Frotas.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icone_Frotas.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Update="icone_Frotas.ico">
